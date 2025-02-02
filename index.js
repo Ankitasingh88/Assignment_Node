@@ -75,3 +75,7 @@ http.createServer( (req, res) => {
      })
 
 }).listen(PORT, () => console.log(`Connected on port ${PORT}`))
+
+const readFile = async (fileName) => {
+    let data = await read(fileName);
+}
